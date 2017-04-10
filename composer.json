@@ -1,0 +1,31 @@
+{
+    "name": "tokendeploys/docker-generation",
+    "description": "Dockerfile generation with templating support",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steve Desmet",
+            "email": "steve.desmet@tokendeploys.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "twig/twig": "^1.30",
+        "symfony/yaml": "^3.2",
+        "symfony/config": "^3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tokendeploys\\DockerGeneration\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tokendeploys\\DockerGeneration\\Test\\": "tests/"
+        }
+    }
+}
